@@ -8,7 +8,7 @@ sharepath="/data/http/default/share/"
 # filename + file extension
 file=$(basename $1)
 # create symlink in format date-filename
-ln -s $1 $sharepath$datum"-"$file
+ln -s $1 $sharepath$date"-"$file
 # create full http link for sharing
 link=$url$date"-"$file
 # copy in clipboard
